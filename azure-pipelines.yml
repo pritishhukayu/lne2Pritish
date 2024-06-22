@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'lneArmServiceConnection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az account show'
+    inlineScript: 'az account show --verbose'
 
 - task: TerraformInstaller@0
   inputs:
